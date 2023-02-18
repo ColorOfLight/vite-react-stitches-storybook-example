@@ -1,5 +1,12 @@
 import React from "react";
-import "./button.css";
+import "@/stories/button.css";
+import { styled } from "@/stitches.config";
+
+const SampleRect = styled("div", {
+  width: "200px",
+  height: "200px",
+  backgroundColor: "yellow",
+});
 
 interface ButtonProps {
   /**
@@ -46,6 +53,7 @@ export const Button = ({
       style={{ backgroundColor }}
       {...props}
     >
+      <SampleRect />
       {label}
     </button>
   );
