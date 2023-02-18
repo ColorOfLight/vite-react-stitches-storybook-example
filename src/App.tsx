@@ -1,12 +1,20 @@
 import { useState } from "react";
 import reactLogo from "@/assets/react.svg";
 import "@/App.css";
+import { styled } from "@/stitches.config";
+
+const SampleRect = styled("div", {
+  width: "200px",
+  height: "200px",
+  backgroundColor: "yellow",
+});
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div className="App">
+      <SampleRect />
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
